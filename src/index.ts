@@ -13,9 +13,15 @@ app.get("/", async (req, res) => {
     })
 });
 
-app.post("/",(req,res)=>{
+app.post("/",async(req,res)=>{
+    await prisma.user.create({
+        data:{
+            username : Math.random().toString(),
+            password : Math.random().toString()
+        }
+    })
     res.json({
-        "message":"Hello World!"
+        "message":"data saved successfully!"
     })
 })
 
