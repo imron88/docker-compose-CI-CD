@@ -1,5 +1,5 @@
 {
-  "name": "docker3",
+  "name": "docker-compose-ci.cd",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
