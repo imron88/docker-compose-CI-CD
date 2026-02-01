@@ -12,7 +12,6 @@ COPY . .
 
 ENV DATABASE_URL=postgresql://postgres:password@postgres:5432/postgres
 
-RUN npx prisma migrate dev
 RUN npx prisma generate
 RUN npm run build
 
