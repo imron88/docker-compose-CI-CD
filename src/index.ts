@@ -25,6 +25,12 @@ app.post("/",async(req,res)=>{
     })
 })
 
+app.post("/api",(req,res)=>{
+    res.json({
+        msg:"ok"
+    })
+})
+
 
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
