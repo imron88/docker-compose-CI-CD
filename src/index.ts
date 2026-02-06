@@ -27,7 +27,8 @@ app.post("/",async(req,res)=>{
 
 app.post("/api",(req,res)=>{
     res.json({
-        msg:"ok"
+        msg:"ok",
+        success : true
     })
 })
 
