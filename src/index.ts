@@ -32,6 +32,10 @@ app.post("/api",(req,res)=>{
     })
 })
 
+app.get("/api/getall",(req,res)=>{
+    
+})
+
 
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
