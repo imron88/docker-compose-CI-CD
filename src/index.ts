@@ -32,7 +32,7 @@ app.post("/api",(req,res)=>{
     })
 })
 
-app.get("/api/getall",(req,res)=>{
+app.get("/api/get",(req,res)=>{
     
 })
 
