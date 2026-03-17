@@ -33,7 +33,10 @@ app.post("/api",(req,res)=>{
 })
 
 app.get("/api/get",(req,res)=>{
-    
+    res.json({
+        msg:"ok",
+        success : true
+    })
 })
 
 
