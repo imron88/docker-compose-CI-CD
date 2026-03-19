@@ -39,6 +39,13 @@ app.get("/api/get",(req,res)=>{
     })
 })
 
+app.get("/api/getall",(req,res)=>{
+    res.json({
+        msg:"ok",
+        success : true
+    })
+})
+
 
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
