@@ -63,6 +63,12 @@ app.delete("/api",(req,res)=>{
         success : true
     })
 })
+app.delete("/api",(req,res)=>{
+    res.json({
+        msg:"ok",
+        success : true
+    })
+})
 
 
 app.listen(port, () => {
