@@ -14,6 +14,7 @@ ENV DATABASE_URL=postgresql://postgres:password@postgres:5432/postgres
 RUN npx prisma generate
 RUN npm run build
 
-EXPOSE 3000
+# exposing the port in docker file for docker-compose its not needed in latest version it can be and can not be specified in latest version.
+EXPOSE 3000 
 
 CMD ["npm", "start"]
