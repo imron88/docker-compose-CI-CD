@@ -2,7 +2,7 @@ import express from "express";
 import { PrismaClient } from "../generated/prisma/client.js";
 
 const app = express();
-const prisma = new PrismaClient({});
+const prisma = new PrismaClient({} as any);
 const port = 3000; 
 app.use(express.json({}));
 
