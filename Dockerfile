@@ -11,11 +11,10 @@ COPY . .
 
 ENV DATABASE_URL=postgresql://postgres:password@localhost:5432/postgres
 
-RUN DATABASE_URL=$DATABASE_URL npx prisma migrate dev
 RUN npx prisma generate
 RUN npm run build
 
 # exposing the port in docker file for docker-compose its not needed in latest version it can be and can not be specified in latest version.
 EXPOSE 3000 
 
-CMD ["npm", "start"]
+CMD ["npm", "dev:docker"]
