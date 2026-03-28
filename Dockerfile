@@ -16,4 +16,4 @@ RUN npm run build
 # exposing the port in docker file for docker-compose its not needed in latest version it can be and can not be specified in latest version.
 EXPOSE 3000 
 
-CMD ["npm", "dev:docker"]
+CMD ["npm", "run" ,"dev:docker"]
