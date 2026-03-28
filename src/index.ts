@@ -1,8 +1,16 @@
 import express from "express";
 import { PrismaClient } from "../generated/prisma/client.js";
+import { PrismaPg } from "@prisma/adapter-pg";
 
 const app = express();
-const prisma = new PrismaClient({} as any);
+const connectionString = process.env.DATABASE_URL;
+
+if (!connectionString) {
+    throw new Error("DATABASE_URL is not set");
+}
+
+const adapter = new PrismaPg({ connectionString });
+const prisma = new PrismaClient({ adapter });
 const port = 3000; 
 app.use(express.json({}));
 
