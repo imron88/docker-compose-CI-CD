@@ -16,7 +16,7 @@ services:
       dockerfile: Dockerfile
 
     environment:
-      - DATABASE_URL=postgresql://postgres:password@localhost:5432/postgres
+      - DATABASE_URL=postgresql://postgres:password@postgres:5432/postgres
 
     ports:
       - 3000:3000
